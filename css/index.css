@@ -65,7 +65,31 @@ html {
   color: #fff;
 }
 #header .nav {
-  height: 372px;
+  height: 300px;
+  padding: 15px 0;
+}
+#header .nav > ul > li {
+  float: left;
+  width: 25%;
+  height: 75px;
+  margin: 10px 0;
+}
+#header .nav > ul > li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#header .nav > ul > li a img {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+#header .nav > ul > li a h2 {
+  font-size: 13px;
+  color: #5a5a5a;
+  text-align: center;
 }
 #recommendArea .recommend .recommend-top {
   height: 36px;

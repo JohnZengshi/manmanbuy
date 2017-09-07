@@ -21,7 +21,16 @@ $.ajax({
     url: 'http://127.0.0.1:9090/api/getindexmenu',
     dataType: 'json',
     success: function (data) {
-        $('#header .nav>ul').html(template('template_1', data.result))
+        var navHtml = "";
+        for (var i = 0; i < data.result.length; i++) {
+            navHtml += "<li>" +
+                "           <a href='./" + data.result[i].titlehref + "'>" +
+                "               " + data.result[i].img +
+                "               <h2>" + data.result[i].name + "</h2>" +
+                "           </a>" +
+                "       </li>"
+        }
+        $('#header .nav>ul').html(navHtml)
     }
 })
 // 导航数据请求的结束
@@ -31,10 +40,10 @@ $.ajax({
     url: 'http://127.0.0.1:9090/api/getmoneyctrl',
     dataType: 'json',
     success: function (data) {
-        console.log(data);
+        // console.log(data);
         var goodsHtml = "";
         for (var i = 0; i < data.result.length; i++) {
-
+            goodsHtml += ""
         }
 
     }
