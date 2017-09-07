@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <!-- 头部部分开始 -->
     <div id="header">
         <div class="top">
             <img src="images/header_logo.png" alt="">
@@ -25,15 +26,42 @@
             <ul></ul>
         </div>
     </div>
+    <!-- 头部部分结束 -->
+
+
+    <!-- 商品推荐开始 -->
     <div id="recommendArea">
-        <div class="recommend"></div>
+        <div class="recommend">
+            <div class="recommend-top">
+                <h2>超值折扣推荐</h2>
+                <a href="#"><i class="iconfont icon-gengduo"></i></a>
+            </div>
+            <div class="recommend-content">
+                <ul></ul>
+            </div>
+        </div>
         <div class="more"></div>
     </div>
+    <!-- 商品推荐结束 -->
     <div id="log"></div>
     <div id="bottom"></div>
 
+
+    <li class="clearfix ui-border-b">
+        <a href="d.aspx?id=217235&amp;f=weixinlist">
+            <div class="pic"><img src="http://wnzk-img.zuyushop.com/r_img/img/20170906/23/ec119545c65f4687b2c1443bf2072022.jpg"></div>
+            <div
+                class="clearfix info">
+                <div class="title">Dole 都乐 菲律宾无冠金菠萝 1个0.9-1.35kg <span>19.9元，可66-30</span></div>
+                <div class="other"><span class="mall">天猫商城 | 09-06 23:23</span><span class="comment"><i class="icon-comment"></i>1</span></div>
+                </div>
+        </a>
+    </li>
+
 </body>
 <!-- 模板区域 -->
+
+<!-- 头部部分模板 -->
 <script type="text/html" id="template_1">
     {{each result}}
     <li>
@@ -44,7 +72,7 @@
     </li>
     {{/each}}
 </script>
-<!-- 模板区域 -->
+
 <script src="lib/jquery-1.4.4.min.js"></script>
 <script src="lib/template.js"></script>
 <script src="js/index.js"></script>

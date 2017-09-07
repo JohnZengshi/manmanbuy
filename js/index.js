@@ -21,10 +21,22 @@ $.ajax({
     url: 'http://127.0.0.1:9090/api/getindexmenu',
     dataType: 'json',
     success: function (data) {
-        console.log(data.result)
         $('#header .nav>ul').html(template('template_1', data.result))
     }
 })
-
-
 // 导航数据请求的结束
+
+// 商品推荐数据请求的开始
+$.ajax({
+    url: 'http://127.0.0.1:9090/api/getmoneyctrl',
+    dataType: 'json',
+    success: function (data) {
+        console.log(data);
+        var goodsHtml = "";
+        for (var i = 0; i < data.result.length; i++) {
+
+        }
+
+    }
+})
+// 商品推荐数据请求的结束

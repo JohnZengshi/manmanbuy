@@ -64,3 +64,31 @@ html {
   font-size: 16px;
   color: #fff;
 }
+#header .nav {
+  height: 372px;
+}
+#recommendArea .recommend .recommend-top {
+  height: 36px;
+  background: linear-gradient(to bottom, #ffaf47, #ff9000);
+}
+#recommendArea .recommend .recommend-top h2 {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 36px;
+  color: #fff;
+  float: left;
+  margin-left: 10px;
+}
+#recommendArea .recommend .recommend-top a {
+  display: block;
+  float: right;
+  height: 100%;
+}
+#recommendArea .recommend .recommend-top a i {
+  color: #fff;
+  font-size: 20px;
+  float: right;
+  height: 100%;
+  line-height: 36px;
+  margin-right: 10px;
+}
